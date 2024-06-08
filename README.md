@@ -1,4 +1,4 @@
-# AWS Security Group Module
+# AWS Terraform Security Group Module
 
 This module allows you to create an AWS Security Group very easily. I have added a trick to automatically set the Name of the SG.
 
@@ -10,7 +10,7 @@ You can visit this [link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec
 
 ```hcl
 module "sg" {
-  source      = "path/to/your/module"
+  source      = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.0"
   
   name        = <string>
   
