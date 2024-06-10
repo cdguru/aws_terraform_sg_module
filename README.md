@@ -10,7 +10,7 @@ You can visit this [link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec
 
 ```hcl
 module "sg" {
-  source      = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.0"
+  source      = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.1"
   
   name        = <string>
   

@@ -11,7 +11,7 @@ Remember:
 
 ```hcl
 module "sg" {
-  source = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.0"
+  source = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.1"
 
   name = "Web server SG"
   
