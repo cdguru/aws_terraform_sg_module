@@ -10,10 +10,12 @@ You can visit this [link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec
 
 ```hcl
 module "sg" {
-  source      = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.1"
+  source      = <directory path || git tag>
   
   name        = <string>
   
+  vpc_id      = <string>
+
   ingress_map = <list of objects>
 
   [OPTIONAL]

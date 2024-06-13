@@ -7,6 +7,8 @@ resource "aws_security_group" "this" {
  
   name = var.name
 
+  vpc_id = var.vpc_id
+
   dynamic "ingress" {
     for_each = var.ingress_map
     content {

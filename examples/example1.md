@@ -11,9 +11,11 @@ Remember:
 
 ```hcl
 module "sg" {
-  source = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.1"
+  source = "git::https://github.com/cdguru/aws_terraform_sg_module.git?ref=v1.2"
 
   name = "Web server SG"
+
+  vpc_id = "vpc-034477dddfbe85d3e"
   
   ingress_map = [
     

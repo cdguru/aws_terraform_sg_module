@@ -3,6 +3,11 @@ variable "name" {
   type        = string
 }
 
+variable "vpc_id" {
+  type = string
+  description = "The id of the VPC to associate this sg"
+}
+
 variable "ingress_map" {
   description = "A map used to define ports and ips you want to allow to ingress to your resource"
   type        = list(object({
